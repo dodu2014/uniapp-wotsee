@@ -102,6 +102,9 @@ importers:
       '@uni-helper/plugin-uni':
         specifier: ^0.1.0
         version: 0.1.0(@dcloudio/vite-plugin-uni@3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.21(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))(vue@3.4.21(typescript@5.8.3)))
+      '@uni-helper/unh':
+        specifier: ^0.2.0
+        version: 0.2.0
       '@uni-helper/uni-env':
         specifier: ^0.1.7
         version: 0.1.7
@@ -1910,6 +1913,10 @@ packages:
     peerDependencies:
       '@dcloudio/vite-plugin-uni': '*'
 
+  '@uni-helper/unh@0.2.0':
+    resolution: {integrity: sha512-DZsixk/7a5JW0lnu0OfIgqv3YSCS2k5bVsWI9AI1tpZ8rWdHsLZ7wHFr3Lg+9wp6p10KAtel/NY5IwxkOJWY4Q==}
+    hasBin: true
+
   '@uni-helper/uni-app-types@1.0.0-alpha.6':
     resolution: {integrity: sha512-t9AKDYBmDaz4IW0fgtBt25ubEzf7kyUeMlHaBaG5nyNGd6pVuDpYkABhsnNPDiZcaHAoN6SbX1SQQx5axDOWbA==}
     engines: {node: '>=14.18'}
@@ -2558,6 +2565,11 @@ packages:
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
+
+  blessed@0.1.81:
+    resolution: {integrity: sha512-LoF5gae+hlmfORcG1M5+5XZi4LBmvlXTzwJWzUlPryN/SJdSflZvROM2TwkT0GMpq7oqT48NRd4GS7BiVBc5OQ==}
+    engines: {node: '>= 0.8.0'}
+    hasBin: true
 
   bmp-js@0.1.0:
     resolution: {integrity: sha512-vHdS19CnY3hwiNdkaqk93DvjVLfbEcI8mys4UjuWrlX1haDmroo8o4xCzh4wD6DGV6HxRCyauwhHRqMTfERtjw==}
@@ -8425,6 +8437,15 @@ snapshots:
     dependencies:
       '@dcloudio/vite-plugin-uni': 3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.21(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))(vue@3.4.21(typescript@5.8.3))
 
+  '@uni-helper/unh@0.2.0':
+    dependencies:
+      blessed: 0.1.81
+      cac: 6.7.14
+      cross-spawn: 7.0.6
+      kolorist: 1.8.0
+      local-pkg: 1.1.2
+      unconfig: 7.3.2
+
   '@uni-helper/uni-app-types@1.0.0-alpha.6(typescript@5.8.3)(vue@3.4.21(typescript@5.8.3))':
     dependencies:
       typescript: 5.8.3
@@ -9257,6 +9278,8 @@ snapshots:
   base64url@3.0.1: {}
 
   binary-extensions@2.3.0: {}
+
+  blessed@0.1.81: {}
 
   bmp-js@0.1.0: {}
 
