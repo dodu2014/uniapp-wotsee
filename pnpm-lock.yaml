@@ -68,6 +68,9 @@ importers:
       vue-i18n:
         specifier: ^9.14.5
         version: 9.14.5(vue@3.4.21(typescript@5.8.3))
+      vue-router:
+        specifier: 4.5.1
+        version: 4.5.1(vue@3.4.21(typescript@5.8.3))
     devDependencies:
       '@dcloudio/types':
         specifier: ^3.4.16
@@ -103,8 +106,8 @@ importers:
         specifier: ^0.1.0
         version: 0.1.0(@dcloudio/vite-plugin-uni@3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.21(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))(vue@3.4.21(typescript@5.8.3)))
       '@uni-helper/unh':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.3
+        version: 0.2.3
       '@uni-helper/uni-env':
         specifier: ^0.1.7
         version: 0.1.7
@@ -1913,8 +1916,8 @@ packages:
     peerDependencies:
       '@dcloudio/vite-plugin-uni': '*'
 
-  '@uni-helper/unh@0.2.0':
-    resolution: {integrity: sha512-DZsixk/7a5JW0lnu0OfIgqv3YSCS2k5bVsWI9AI1tpZ8rWdHsLZ7wHFr3Lg+9wp6p10KAtel/NY5IwxkOJWY4Q==}
+  '@uni-helper/unh@0.2.3':
+    resolution: {integrity: sha512-uioHeLp0Aw458jAzE3B/uKMAeqpx5EVP2nmAmZSZaIA+kGg5B9zNruMfIK/tDmWdxRyA2/3vbrMWh6cYjXc68Q==}
     hasBin: true
 
   '@uni-helper/uni-app-types@1.0.0-alpha.6':
@@ -5535,8 +5538,8 @@ packages:
     peerDependencies:
       vue: ^3.0.0
 
-  vue-router@4.5.0:
-    resolution: {integrity: sha512-HDuk+PuH5monfNuY+ct49mNmkCRK4xJAV9Ts4z9UFc4rzdDnxQLyCMGGc8pKhZhHTVzfanpNwB/lwqevcBwI4w==}
+  vue-router@4.5.1:
+    resolution: {integrity: sha512-ogAF3P97NPm8fJsE4by9dwSYtDwXIY1nFY9T6DyQnGHd1E2Da94w9JIolpe42LJGIl0DwOHBi8TcRPlPGwbTtw==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -6937,7 +6940,7 @@ snapshots:
       localstorage-polyfill: 1.0.1
       postcss-selector-parser: 6.1.2
       safe-area-insets: 1.4.1
-      vue-router: 4.5.0(vue@3.4.21(typescript@5.8.3))
+      vue-router: 4.5.1(vue@3.4.21(typescript@5.8.3))
       xmlhttprequest: 1.8.0
     transitivePeerDependencies:
       - '@nuxt/kit'
@@ -8437,7 +8440,7 @@ snapshots:
     dependencies:
       '@dcloudio/vite-plugin-uni': 3.0.0-4070520250711001(@vueuse/core@13.5.0(vue@3.4.21(typescript@5.8.3)))(postcss@8.5.6)(rollup@4.41.1)(vite@5.2.8(@types/node@24.1.0)(terser@5.37.0))(vue@3.4.21(typescript@5.8.3))
 
-  '@uni-helper/unh@0.2.0':
+  '@uni-helper/unh@0.2.3':
     dependencies:
       blessed: 0.1.81
       cac: 6.7.14
@@ -12778,7 +12781,7 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.4.21(typescript@5.8.3)
 
-  vue-router@4.5.0(vue@3.4.21(typescript@5.8.3)):
+  vue-router@4.5.1(vue@3.4.21(typescript@5.8.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.4.21(typescript@5.8.3)
