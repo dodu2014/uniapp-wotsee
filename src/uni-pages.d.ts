@@ -8,23 +8,21 @@ type _LocationUrl =
   "/pages/hi";
 
 interface NavigateToOptions {
-  url: _LocationUrl;
+	url: _LocationUrl;
 }
 interface RedirectToOptions extends NavigateToOptions {}
 
-interface SwitchTabOptions {
-  
-}
+interface SwitchTabOptions {}
 
 type ReLaunchOptions = NavigateToOptions | SwitchTabOptions;
 
 declare interface Uni {
-  navigateTo(options: UniNamespace.NavigateToOptions & NavigateToOptions): void;
-  redirectTo(options: UniNamespace.RedirectToOptions & RedirectToOptions): void;
-  switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void;
-  reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void;
+	navigateTo(options: UniNamespace.NavigateToOptions & NavigateToOptions): void;
+	redirectTo(options: UniNamespace.RedirectToOptions & RedirectToOptions): void;
+	switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void;
+	reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void;
 }
 
-declare module "virtual:uni-pages" {
-  export type LocationUrl = _LocationUrl;
+declare module 'virtual:uni-pages' {
+	export type LocationUrl = _LocationUrl;
 }
